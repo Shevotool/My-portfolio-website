@@ -1,0 +1,464 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #eff2f9;
+  --right-side-cv: #f9fafb; /* trabajar en esto */
+  --white-color: #fff;
+  --font-color: rgb(5, 5, 5);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Download button */
+.top-main {
+  margin-top: 5rem;
+}
+
+.top-main div {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End Download button */
+
+/* ***** CV ***** */
+
+.bottom-class {
+  margin-top: 0px;
+}
+
+.contact-header-info {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Container CV */
+
+.section-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* End Container CV */
+
+/* Header title */
+
+.header-title {
+  background-color: #333;
+  color: #fff;
+  height: 360px;
+  width: 100%;
+}
+
+/* End Header title */
+
+/* Container  */
+
+.container2 {
+  position: relative;
+  height: 1200px;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1.04fr 2fr;
+}
+
+/* contact personal info  */
+
+.contact-link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: -7px;
+  margin-left: 10px;
+}
+
+.contact-link2 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-link:hover {
+  color: var(--white-color);
+}
+
+.content-box2 {
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.hero-icon {
+  margin-left: 0.5rem;
+}
+
+/* contact personal info  */
+
+/*  ***** Left side *****  */
+
+.container2 .left-side {
+  position: relative;
+  background: #f8f8f8;
+}
+
+.header-left {
+  font-family: "Lora", serif;
+  color: var(--font-color);
+  font-weight: 800;
+  margin-top: -0.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Title right */
+.title-left {
+  font-family: "Lora", serif;
+  color: var(--font-color);
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.text-content {
+  color: var(--font-color);
+}
+
+.my-education p {
+  color: var(--font-color);
+  margin-left: 1rem;
+}
+
+.experience {
+  margin-top: 1rem;
+  color: var(--font-color);
+}
+
+.experience2 {
+  margin-top: 1.5rem;
+  color: var(--font-color);
+}
+
+/*  ***** End Left side *****  */
+
+/*  ***** Right side *****  */
+
+.container2 {
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
+.container2 .right-side {
+  position: relative;
+  background-color: var(--right-side-cv);
+  padding: 40px;
+}
+
+.title-right {
+  color: var(--font-color);
+  font-family: "Lora", serif;
+  font-weight: 800;
+  margin-top: 3rem;
+}
+
+.title-job {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.my-skills {
+  margin-top: 2rem;
+}
+
+.my-skills-lang {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-left: 2rem;
+}
+
+.my-skills-lang li {
+  margin-top: 0.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--font-color);
+}
+
+.languages {
+  color: var(--font-color);
+  margin-left: 1rem;
+}
+
+.position {
+  color: #333;
+  font-weight: 600;
+}
+
+/*  ***** End Right side *****  */
+
+/*  ***** Queries *****  */
+
+@media (max-width: 767px) {
+  .container2 {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%; /* Probando altura  */
+  }
+
+  /* Header text */
+  .header-text {
+    font-size: 30px;
+    padding: 30px 5px 5px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+  }
+
+  .header-text-dev {
+    font-size: 20px;
+    padding: 1px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+  .header-text-dev2 {
+    font-size: 20px;
+    padding: 0px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+  /* Header text */
+
+  .languages {
+    margin-bottom: 3rem;
+  }
+
+  .my-skills-lang {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container2 {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%; /* Probando altura  */
+  }
+
+  .header-text {
+    font-size: 30px;
+    padding: 30px 5px 5px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+  }
+
+  .header-text-dev {
+    font-size: 20px;
+    padding: 1px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+  .header-text-dev2 {
+    font-size: 20px;
+    padding: 0px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+  .languages {
+    margin-bottom: 3rem;
+  }
+
+  .my-skills-lang {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Header text */
+  .header-text {
+    font-size: 30px;
+    padding: 30px 5px 5px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+  }
+
+  .header-text-dev {
+    font-size: 20px;
+    padding: 1px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+
+  .header-text-dev2 {
+    font-size: 20px;
+    padding: 0px 5px 5px;
+    font-family: "Lora", serif;
+    text-align: center;
+  }
+  /* Header left */
+
+  .header-left {
+    font-size: 22px;
+  }
+
+  .title-left {
+    font-size: 22px;
+  }
+
+  .title-right {
+    font-size: 22px;
+  }
+
+  .flex-container {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/*  ***** End Queries *****  */
+
+/*  ***** Education timeline *****  */
+
+.timeline {
+  background-color: #fafaf9;
+  border-left: 8px solid #42a5f5;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #333;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3 {
+  font-size: 1.4em;
+}
+
+.timeline .event {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -177.5px;
+  color: #212121;
+  text-align: right;
+  /*  font-weight: 100;*/
+
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 8px #42a5f5;
+  left: -30px;
+  background: #212121;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+/*  ***** Responsive stuff *****  */
+
+@media (max-width: 945px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+  section.lab h3.card-title {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline .event::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline .event:nth-child(1)::before,
+  .timeline .event:nth-child(3)::before,
+  .timeline .event:nth-child(5)::before {
+    top: 38px;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline p {
+    padding-top: 20px;
+  }
+}
+
+.line-footer {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
