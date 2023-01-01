@@ -1,628 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--     <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Slab:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/cv.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Andrés - Personal CV</title>
-    <link rel="icon" href="images/wolf_logo.PNG" />
-    <meta
-      name="description"
-      content="Hello welcome to my professional website, my name is Andrés, software developer"
-    />
-    <link
-      rel="canonical"
-      href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG"
-    />
-    <link
-      rel="favicon"
-      href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG"
-    />
-    <meta name="theme-color" content="#db2777" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      name="twitter:title"
-      content="Andrés - Personal Portfolio"
-    />
-    <meta
-      property="og:description"
-      name="twitter:description"
-      content="Hello welcome to my professional website, my name is Andrés, software developer"
-    />
-    <meta
-      property="og:image"
-      name="twitter:image"
-      content="https://andresgonzalezsh.netlify.app/images/web-img.webp"
-    />
-    <meta
-      property="og:url"
-      name="twitter:url"
-      content="https://andresgonzalezsh.netlify.app/images/web-img.webp"
-    />
-  </head>
-  <body data-dark>
-    <header class="header" data-dark>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">🦈Andrés</a>
-        </div>
-        <button class="menu-btn" aria-label="Menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
-          <svg
-            class="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-            />
-          </svg>
-        </button>
-        <nav class="menu" data-dark>
-          <a href="index.html">Home</a>
-          <a href="#">About</a>
-          <a href="#cv">CV</a>
-          <a href="#education">Education</a>
-          <a href="index.html">Contact</a>
-        </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/cv.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Andrés - Personal CV</title>
+  <link rel="icon" href="images/wolf_logo.PNG" />
+  <meta name="description" content="Hello welcome to my professional website, my name is Andrés, software developer" />
+  <link rel="canonical" href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG" />
+  <link rel="favicon" href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG" />
+  <link rel="apple-touch-icon" href="https://andresgonzalezsh.netlify.app/images/wolf_logo.PNG" />
+  <meta name="theme-color" content="#db2777" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" name="twitter:title" content="Andrés - Personal Portfolio" />
+  <meta property="og:description" name="twitter:description"
+    content="Hello welcome to my professional website, my name is Andrés, software developer" />
+  <meta property="og:image" name="twitter:image" content="https://andresgonzalezsh.netlify.app/images/web-img.webp" />
+  <meta property="og:url" name="twitter:url" content="https://andresgonzalezsh.netlify.app/images/web-img.webp" />
+</head>
+
+<body data-dark>
+  <header class="header" data-dark>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">🦈Andrés</a>
       </div>
-    </header>
-
-    <!-- ***** CV ***** -->
-    <div id="cv" class="top-main">
-      <div id="btnCrearPdf" class="btn">Download Here</div>
+      <button class="menu-btn" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu" data-dark>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#cv">CV</a>
+        <a href="#education">Education</a>
+        <a href="index.html">Contact</a>
+      </nav>
     </div>
-    <!-- Container cv -->
-    <div id="cv-pdf" class="section-cv">
-      <!-- Container2 -->
-      <div class="container2 full-lg-screen">
-        <!-- ***** Left side ***** -->
-        <section class="left-side">
-          <!-- Contact info -->
-          <header class="header-title">
-            <h1 class="header-text">Andrés González</h1>
-            <p class="header-text-dev">Front-End Developer</p>
-            <p class="header-text-dev2">QA Developer</p>
-            <div class="contact-info">
-              <!-- Phone -->
-              <div class="content-box2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  height="24px"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                  />
-                </svg>
+  </header>
 
-                <a href="#" class="contact-link2"
-                  ><span class="contact-link">(+506) 8737 5114</span></a
-                >
-              </div>
-              <!-- End Phone -->
-              <!-- Mail -->
-              <div class="content-box2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  width="22px"
-                  height="20px"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                  />
-                </svg>
-
-                <a class="contact-link2" href="mailto:shevo25gonzalez@gmail.com"
-                  ><span class="contact-link"
-                    >shevo25gonzalez@gmail.com</span
-                  ></a
-                >
-              </div>
-              <!-- End Mail -->
-              <!-- Website -->
-              <div class="content-box2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  width="24px"
-                  height="24px"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
-                  />
-                </svg>
-                <a
-                  class="contact-link2"
-                  href="https://andresgonzalezsh.netlify.app/"
-                  ><span class="contact-link"
-                    >andresgonzalezsh.netlify.app</span
-                  ></a
-                >
-              </div>
-              <!-- End Website -->
-              <!-- Linkedin -->
-              <div class="content-box2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 50 50"
-                  width="24px"
-                  height="24px"
-                >
-                  <g id="surface141192155">
-                    <path
-                      style="
-                        stroke: none;
-                        fill-rule: nonzero;
-                        fill: rgb(100%, 100%, 100%);
-                        fill-opacity: 1;
-                      "
-                      d="M 25 2 C 12.308594 2 2 12.308594 2 25 C 2 37.691406 12.308594 48 25 48 C 37.691406 48 48 37.691406 48 25 C 48 12.308594 37.691406 2 25 2 Z M 25 4 C 36.609375 4 46 13.390625 46 25 C 46 36.609375 36.609375 46 25 46 C 13.390625 46 4 36.609375 4 25 C 4 13.390625 13.390625 4 25 4 Z M 16 12 C 14.355469 12 13 13.355469 13 15 C 13 16.644531 14.355469 18 16 18 C 17.644531 18 19 16.644531 19 15 C 19 13.355469 17.644531 12 16 12 Z M 16 14 C 16.5625 14 17 14.4375 17 15 C 17 15.5625 16.5625 16 16 16 C 15.4375 16 15 15.5625 15 15 C 15 14.4375 15.4375 14 16 14 Z M 14 19 C 13.449219 19 13 19.449219 13 20 L 13 35 C 13 35.550781 13.449219 36 14 36 L 18 36 C 18.550781 36 19 35.550781 19 35 L 19 20 C 19 19.449219 18.550781 19 18 19 Z M 22 19 C 21.449219 19 21 19.449219 21 20 L 21 35 C 21 35.550781 21.449219 36 22 36 L 26 36 C 26.550781 36 27 35.550781 27 35 L 27 27.5 C 27 26.121094 28.121094 25 29.5 25 C 30.878906 25 32 26.121094 32 27.5 L 32 35 C 32 35.550781 32.449219 36 33 36 L 37 36 C 37.550781 36 38 35.550781 38 35 L 38 26.5 C 38 22.371094 34.628906 19 30.5 19 C 29.214844 19 28.058594 19.417969 27 19.988281 C 26.996094 19.441406 26.546875 19 26 19 Z M 15 21 L 17 21 L 17 34 L 15 34 Z M 23 21 L 25 21 L 25 21.816406 C 25 22.21875 25.238281 22.578125 25.609375 22.738281 C 25.976562 22.894531 26.40625 22.816406 26.695312 22.539062 C 27.683594 21.585938 29.015625 21 30.5 21 C 33.550781 21 36 23.449219 36 26.5 L 36 34 L 34 34 L 34 27.5 C 34 25.03125 31.96875 23 29.5 23 C 27.03125 23 25 25.03125 25 27.5 L 25 34 L 23 34 Z M 23 21 "
-                    />
-                  </g>
-                </svg>
-                <a
-                  class="contact-link2"
-                  href="https://www.linkedin.com/in/andresgonzalez-developer/"
-                  ><span class="contact-link">andresgonzalez-developer</span></a
-                >
-              </div>
-              <!-- End Linkedin -->
-              <!-- Git hub -->
-              <div class="content-box2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 50 50"
-                  width="24px"
-                  height="24px"
-                >
-                  <g id="surface141269820">
-                    <path
-                      style="
-                        stroke: none;
-                        fill-rule: nonzero;
-                        fill: rgb(100%, 100%, 100%);
-                        fill-opacity: 1;
-                      "
-                      d="M 25 2 C 12.3125 2 2 12.3125 2 25 C 2 37.6875 12.3125 48 25 48 C 37.6875 48 48 37.6875 48 25 C 48 12.3125 37.6875 2 25 2 Z M 25 4 C 36.605469 4 46 13.394531 46 25 C 46 25.070312 45.996094 25.140625 45.992188 25.210938 C 45.355469 25.152344 44.617188 25.097656 43.675781 25.0625 C 42.347656 25.015625 40.671875 25.03125 38.773438 25.125 C 38.84375 24.632812 38.894531 24.136719 38.894531 23.625 C 38.992188 21.753906 38.363281 20.003906 37.339844 18.457031 C 37.585938 17.601562 37.875 16.515625 37.949219 15.285156 C 38.03125 13.878906 37.910156 12.320312 36.78125 11.269531 L 36.492188 11 L 36.097656 11 C 33.417969 11 31.578125 12.125 30.457031 13.015625 C 28.835938 12.386719 27.011719 12 25 12 C 22.976562 12 21.136719 12.390625 19.449219 13.019531 C 18.324219 12.125 16.488281 11 13.800781 11 L 13.410156 11 L 13.121094 11.269531 C 12.019531 12.289062 11.917969 13.800781 11.988281 15.199219 C 12.046875 16.429688 12.320312 17.550781 12.566406 18.449219 C 11.523438 20.023438 10.902344 21.820312 10.902344 23.601562 C 10.902344 24.109375 10.949219 24.609375 11.019531 25.101562 C 9.210938 25.019531 7.601562 25 6.324219 25.046875 C 5.382812 25.082031 4.644531 25.136719 4.007812 25.195312 C 4.003906 25.128906 4 25.066406 4 25 C 4 13.394531 13.394531 4 25 4 Z M 14.394531 13.132812 C 16.414062 13.320312 17.933594 14.222656 18.632812 14.847656 L 19.101562 15.261719 L 19.679688 15.023438 C 21.261719 14.375 23.027344 14 25 14 C 26.972656 14 28.738281 14.375 30.199219 15.015625 L 30.785156 15.273438 L 31.265625 14.847656 C 31.964844 14.222656 33.488281 13.320312 35.507812 13.132812 C 35.773438 13.574219 36.007812 14.207031 35.953125 15.167969 C 35.882812 16.3125 35.578125 17.558594 35.347656 18.300781 L 35.195312 18.785156 L 35.496094 19.191406 C 36.484375 20.539062 36.988281 22 36.902344 23.546875 L 36.902344 23.601562 C 36.902344 26.09375 36 28.09375 34.089844 29.574219 C 32.175781 31.050781 29.152344 32 24.902344 32 C 20.648438 32 17.625 31.050781 15.710938 29.574219 C 13.796875 28.09375 12.902344 26.09375 12.902344 23.601562 C 12.902344 22.136719 13.429688 20.523438 14.40625 19.191406 L 14.699219 18.792969 L 14.558594 18.320312 C 14.328125 17.53125 14.042969 16.253906 13.988281 15.101562 C 13.9375 14.144531 14.167969 13.535156 14.398438 13.132812 Z M 8.886719 26.019531 C 9.589844 26.03125 10.402344 26.070312 11.214844 26.109375 C 11.289062 26.421875 11.378906 26.726562 11.488281 27.027344 C 8.179688 27.097656 5.703125 27.429688 4.179688 27.714844 C 4.113281 27.214844 4.0625 26.710938 4.035156 26.199219 C 5.164062 26.09375 6.75 25.996094 8.886719 26.023438 Z M 41.113281 26.039062 C 43.246094 26.011719 44.835938 26.109375 45.960938 26.214844 C 45.933594 26.71875 45.882812 27.214844 45.820312 27.707031 C 44.242188 27.417969 41.699219 27.085938 38.304688 27.03125 C 38.410156 26.738281 38.5 26.4375 38.574219 26.132812 C 39.472656 26.085938 40.34375 26.046875 41.113281 26.039062 Z M 11.914062 28.019531 C 12.507812 29.214844 13.363281 30.28125 14.488281 31.15625 C 16.027344 32.34375 18.03125 33.179688 20.476562 33.625 C 20.15625 33.953125 19.867188 34.3125 19.605469 34.691406 L 19.546875 34.640625 C 19.550781 34.632812 19.050781 34.886719 18.296875 34.953125 C 17.546875 35.019531 16.621094 35 15.800781 35 C 14.574219 35 14.035156 34.421875 13.171875 33.367188 C 12.695312 32.722656 12.113281 32.203125 11.546875 31.808594 C 10.96875 31.402344 10.476562 31.117188 9.863281 31.015625 L 9.78125 31 L 9.699219 31 C 9.234375 31 8.78125 31.035156 8.359375 31.515625 C 8.148438 31.757812 8.003906 32.203125 8.097656 32.582031 C 8.191406 32.957031 8.429688 33.191406 8.644531 33.332031 C 10.011719 34.242188 10.253906 36.046875 11.109375 37.652344 C 11.910156 39.246094 13.636719 40 15.402344 40 L 18 40 L 18 44.804688 C 10.96875 42.320312 5.664062 36.203125 4.332031 28.703125 C 5.863281 28.414062 8.425781 28.066406 11.914062 28.019531 Z M 37.882812 28.027344 C 41.445312 28.058594 44.082031 28.402344 45.667969 28.695312 C 44.339844 36.203125 39.035156 42.320312 32 44.800781 L 32 39.597656 C 32 38.015625 31.480469 36.269531 30.574219 34.8125 C 30.300781 34.367188 29.976562 33.949219 29.617188 33.574219 C 31.929688 33.117188 33.832031 32.296875 35.3125 31.15625 C 36.4375 30.285156 37.289062 29.21875 37.882812 28.027344 Z M 23.699219 34.097656 L 26.5 34.097656 C 27.3125 34.097656 28.179688 34.746094 28.875 35.867188 C 29.570312 36.984375 30 38.484375 30 39.601562 L 30 45.398438 C 28.398438 45.789062 26.722656 46 25 46 C 23.277344 46 21.601562 45.789062 20 45.398438 L 20 39.601562 C 20 38.507812 20.46875 37.011719 21.207031 35.890625 C 21.949219 34.765625 22.886719 34.101562 23.699219 34.101562 Z M 12.308594 35.28125 C 13.175781 36.179688 14.222656 37 15.800781 37 C 16.578125 37 17.550781 37.027344 18.476562 36.945312 C 18.480469 36.945312 18.484375 36.945312 18.488281 36.941406 C 18.363281 37.292969 18.273438 37.644531 18.199219 38 L 15.402344 38 C 14.167969 38 13.296875 37.554688 12.894531 36.75 L 12.886719 36.738281 L 12.882812 36.726562 C 12.714844 36.421875 12.5 35.8125 12.308594 35.28125 Z M 12.308594 35.28125 "
-                    />
-                  </g>
-                </svg>
-                <a class="contact-link2" href="https://github.com/Shevotool"
-                  ><span class="contact-link">github.com/Shevotool</span></a
-                >
-              </div>
-              <!-- End Git hub -->
-            </div>
-          </header>
-          <!-- End Contact info -->
-          <div class="my-education">
-            <h3 class="title-left">EDUCATION</h3>
-            <p>Software Developer</p>
-            <p>Technical Degree</p>
-            <p>C.T.P Jesús Ocaña Rojas</p>
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16px"
-                width="16px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"
-                />
+  <!-- ***** CV ***** -->
+  <div id="cv" class="top-main">
+    <div id="btnCrearPdf" class="btn">Download Here</div>
+  </div>
+  <!-- Container cv -->
+  <div id="cv-pdf" class="section-cv">
+    <!-- Container2 -->
+    <div class="container2 full-lg-screen">
+      <!-- ***** Left side ***** -->
+      <section class="left-side">
+        <!-- Contact info -->
+        <header class="header-title">
+          <h1 class="header-text">Andrés González</h1>
+          <p class="header-text-dev">Front-End Developer</p>
+          <p class="header-text-dev2">QA Developer</p>
+          <div class="contact-info">
+            <!-- Phone -->
+            <div class="content-box2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" height="24px"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
               </svg>
-              2018 - 2021
-            </p>
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="16px"
-                width="16px"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                /></svg
-              >Alajuela, Costa Rica
-            </p>
-          </div>
 
-          <!-- My Skills -->
-          <div class="my-skills">
-            <h3 class="title-left">My Skills</h3>
-            <ul class="my-skills-lang">
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>Java</li>
-              <li>Git</li>
-              <li>Mysql</li>
-            </ul>
-          </div>
+              <a href="#" class="contact-link2"><span class="contact-link">(+506) 8737 5114</span></a>
+            </div>
+            <!-- End Phone -->
+            <!-- Mail -->
+            <div class="content-box2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="22px" height="20px"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
 
-          <!-- Certifications -->
-          <h3 class="title-left">Certifications</h3>
-          <div class="languages">
-            <p>Scrum Master</p>
-            <p>Software Design</p>
-            <p>Linux Unhachted</p>
-            <p>Cisco IT Essentials</p>
-            <p>JavaScript Moderno</p>
-            <p>CSS Master Course</p>
-            <p>Software Methodologies</p>
-            <p>Agile Software Development</p>
-            <p>Engineering Practices for Software.</p>
+              <a class="contact-link2" href="mailto:shevo25gonzalez@gmail.com"><span
+                  class="contact-link">shevo25gonzalez@gmail.com</span></a>
+            </div>
+            <!-- End Mail -->
+            <!-- Website -->
+            <div class="content-box2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24px" height="24px"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
+              </svg>
+              <a class="contact-link2" href="https://andresgonzalezsh.netlify.app/"><span
+                  class="contact-link">andresgonzalezsh.netlify.app</span></a>
+            </div>
+            <!-- End Website -->
+            <!-- Linkedin -->
+            <div class="content-box2">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
+                width="24px" height="24px">
+                <g id="surface141192155">
+                  <path style="
+                        stroke: none;
+                        fill-rule: nonzero;
+                        fill: rgb(100%, 100%, 100%);
+                        fill-opacity: 1;
+                      "
+                    d="M 25 2 C 12.308594 2 2 12.308594 2 25 C 2 37.691406 12.308594 48 25 48 C 37.691406 48 48 37.691406 48 25 C 48 12.308594 37.691406 2 25 2 Z M 25 4 C 36.609375 4 46 13.390625 46 25 C 46 36.609375 36.609375 46 25 46 C 13.390625 46 4 36.609375 4 25 C 4 13.390625 13.390625 4 25 4 Z M 16 12 C 14.355469 12 13 13.355469 13 15 C 13 16.644531 14.355469 18 16 18 C 17.644531 18 19 16.644531 19 15 C 19 13.355469 17.644531 12 16 12 Z M 16 14 C 16.5625 14 17 14.4375 17 15 C 17 15.5625 16.5625 16 16 16 C 15.4375 16 15 15.5625 15 15 C 15 14.4375 15.4375 14 16 14 Z M 14 19 C 13.449219 19 13 19.449219 13 20 L 13 35 C 13 35.550781 13.449219 36 14 36 L 18 36 C 18.550781 36 19 35.550781 19 35 L 19 20 C 19 19.449219 18.550781 19 18 19 Z M 22 19 C 21.449219 19 21 19.449219 21 20 L 21 35 C 21 35.550781 21.449219 36 22 36 L 26 36 C 26.550781 36 27 35.550781 27 35 L 27 27.5 C 27 26.121094 28.121094 25 29.5 25 C 30.878906 25 32 26.121094 32 27.5 L 32 35 C 32 35.550781 32.449219 36 33 36 L 37 36 C 37.550781 36 38 35.550781 38 35 L 38 26.5 C 38 22.371094 34.628906 19 30.5 19 C 29.214844 19 28.058594 19.417969 27 19.988281 C 26.996094 19.441406 26.546875 19 26 19 Z M 15 21 L 17 21 L 17 34 L 15 34 Z M 23 21 L 25 21 L 25 21.816406 C 25 22.21875 25.238281 22.578125 25.609375 22.738281 C 25.976562 22.894531 26.40625 22.816406 26.695312 22.539062 C 27.683594 21.585938 29.015625 21 30.5 21 C 33.550781 21 36 23.449219 36 26.5 L 36 34 L 34 34 L 34 27.5 C 34 25.03125 31.96875 23 29.5 23 C 27.03125 23 25 25.03125 25 27.5 L 25 34 L 23 34 Z M 23 21 " />
+                </g>
+              </svg>
+              <a class="contact-link2" href="https://www.linkedin.com/in/andresgonzalez-developer/"><span
+                  class="contact-link">andresgonzalez-developer</span></a>
+            </div>
+            <!-- End Linkedin -->
+            <!-- Git hub -->
+            <div class="content-box2">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"
+                width="24px" height="24px">
+                <g id="surface141269820">
+                  <path style="
+                        stroke: none;
+                        fill-rule: nonzero;
+                        fill: rgb(100%, 100%, 100%);
+                        fill-opacity: 1;
+                      "
+                    d="M 25 2 C 12.3125 2 2 12.3125 2 25 C 2 37.6875 12.3125 48 25 48 C 37.6875 48 48 37.6875 48 25 C 48 12.3125 37.6875 2 25 2 Z M 25 4 C 36.605469 4 46 13.394531 46 25 C 46 25.070312 45.996094 25.140625 45.992188 25.210938 C 45.355469 25.152344 44.617188 25.097656 43.675781 25.0625 C 42.347656 25.015625 40.671875 25.03125 38.773438 25.125 C 38.84375 24.632812 38.894531 24.136719 38.894531 23.625 C 38.992188 21.753906 38.363281 20.003906 37.339844 18.457031 C 37.585938 17.601562 37.875 16.515625 37.949219 15.285156 C 38.03125 13.878906 37.910156 12.320312 36.78125 11.269531 L 36.492188 11 L 36.097656 11 C 33.417969 11 31.578125 12.125 30.457031 13.015625 C 28.835938 12.386719 27.011719 12 25 12 C 22.976562 12 21.136719 12.390625 19.449219 13.019531 C 18.324219 12.125 16.488281 11 13.800781 11 L 13.410156 11 L 13.121094 11.269531 C 12.019531 12.289062 11.917969 13.800781 11.988281 15.199219 C 12.046875 16.429688 12.320312 17.550781 12.566406 18.449219 C 11.523438 20.023438 10.902344 21.820312 10.902344 23.601562 C 10.902344 24.109375 10.949219 24.609375 11.019531 25.101562 C 9.210938 25.019531 7.601562 25 6.324219 25.046875 C 5.382812 25.082031 4.644531 25.136719 4.007812 25.195312 C 4.003906 25.128906 4 25.066406 4 25 C 4 13.394531 13.394531 4 25 4 Z M 14.394531 13.132812 C 16.414062 13.320312 17.933594 14.222656 18.632812 14.847656 L 19.101562 15.261719 L 19.679688 15.023438 C 21.261719 14.375 23.027344 14 25 14 C 26.972656 14 28.738281 14.375 30.199219 15.015625 L 30.785156 15.273438 L 31.265625 14.847656 C 31.964844 14.222656 33.488281 13.320312 35.507812 13.132812 C 35.773438 13.574219 36.007812 14.207031 35.953125 15.167969 C 35.882812 16.3125 35.578125 17.558594 35.347656 18.300781 L 35.195312 18.785156 L 35.496094 19.191406 C 36.484375 20.539062 36.988281 22 36.902344 23.546875 L 36.902344 23.601562 C 36.902344 26.09375 36 28.09375 34.089844 29.574219 C 32.175781 31.050781 29.152344 32 24.902344 32 C 20.648438 32 17.625 31.050781 15.710938 29.574219 C 13.796875 28.09375 12.902344 26.09375 12.902344 23.601562 C 12.902344 22.136719 13.429688 20.523438 14.40625 19.191406 L 14.699219 18.792969 L 14.558594 18.320312 C 14.328125 17.53125 14.042969 16.253906 13.988281 15.101562 C 13.9375 14.144531 14.167969 13.535156 14.398438 13.132812 Z M 8.886719 26.019531 C 9.589844 26.03125 10.402344 26.070312 11.214844 26.109375 C 11.289062 26.421875 11.378906 26.726562 11.488281 27.027344 C 8.179688 27.097656 5.703125 27.429688 4.179688 27.714844 C 4.113281 27.214844 4.0625 26.710938 4.035156 26.199219 C 5.164062 26.09375 6.75 25.996094 8.886719 26.023438 Z M 41.113281 26.039062 C 43.246094 26.011719 44.835938 26.109375 45.960938 26.214844 C 45.933594 26.71875 45.882812 27.214844 45.820312 27.707031 C 44.242188 27.417969 41.699219 27.085938 38.304688 27.03125 C 38.410156 26.738281 38.5 26.4375 38.574219 26.132812 C 39.472656 26.085938 40.34375 26.046875 41.113281 26.039062 Z M 11.914062 28.019531 C 12.507812 29.214844 13.363281 30.28125 14.488281 31.15625 C 16.027344 32.34375 18.03125 33.179688 20.476562 33.625 C 20.15625 33.953125 19.867188 34.3125 19.605469 34.691406 L 19.546875 34.640625 C 19.550781 34.632812 19.050781 34.886719 18.296875 34.953125 C 17.546875 35.019531 16.621094 35 15.800781 35 C 14.574219 35 14.035156 34.421875 13.171875 33.367188 C 12.695312 32.722656 12.113281 32.203125 11.546875 31.808594 C 10.96875 31.402344 10.476562 31.117188 9.863281 31.015625 L 9.78125 31 L 9.699219 31 C 9.234375 31 8.78125 31.035156 8.359375 31.515625 C 8.148438 31.757812 8.003906 32.203125 8.097656 32.582031 C 8.191406 32.957031 8.429688 33.191406 8.644531 33.332031 C 10.011719 34.242188 10.253906 36.046875 11.109375 37.652344 C 11.910156 39.246094 13.636719 40 15.402344 40 L 18 40 L 18 44.804688 C 10.96875 42.320312 5.664062 36.203125 4.332031 28.703125 C 5.863281 28.414062 8.425781 28.066406 11.914062 28.019531 Z M 37.882812 28.027344 C 41.445312 28.058594 44.082031 28.402344 45.667969 28.695312 C 44.339844 36.203125 39.035156 42.320312 32 44.800781 L 32 39.597656 C 32 38.015625 31.480469 36.269531 30.574219 34.8125 C 30.300781 34.367188 29.976562 33.949219 29.617188 33.574219 C 31.929688 33.117188 33.832031 32.296875 35.3125 31.15625 C 36.4375 30.285156 37.289062 29.21875 37.882812 28.027344 Z M 23.699219 34.097656 L 26.5 34.097656 C 27.3125 34.097656 28.179688 34.746094 28.875 35.867188 C 29.570312 36.984375 30 38.484375 30 39.601562 L 30 45.398438 C 28.398438 45.789062 26.722656 46 25 46 C 23.277344 46 21.601562 45.789062 20 45.398438 L 20 39.601562 C 20 38.507812 20.46875 37.011719 21.207031 35.890625 C 21.949219 34.765625 22.886719 34.101562 23.699219 34.101562 Z M 12.308594 35.28125 C 13.175781 36.179688 14.222656 37 15.800781 37 C 16.578125 37 17.550781 37.027344 18.476562 36.945312 C 18.480469 36.945312 18.484375 36.945312 18.488281 36.941406 C 18.363281 37.292969 18.273438 37.644531 18.199219 38 L 15.402344 38 C 14.167969 38 13.296875 37.554688 12.894531 36.75 L 12.886719 36.738281 L 12.882812 36.726562 C 12.714844 36.421875 12.5 35.8125 12.308594 35.28125 Z M 12.308594 35.28125 " />
+                </g>
+              </svg>
+              <a class="contact-link2" href="https://github.com/Shevotool"><span
+                  class="contact-link">github.com/Shevotool</span></a>
+            </div>
+            <!-- End Git hub -->
           </div>
-
-          <!-- Languages -->
-          <h3 class="title-left">My Languages</h3>
-          <div class="languages">
-            <p>English (b2+)</p>
-            <p>Spanish Native Speaker</p>
-          </div>
-        </section>
-        <!-- ***** End Left side ***** -->
-
-        <!-- ***** Right side ***** -->
-        <section class="right-side">
-          <h3 class="header-left">SUMMARY</h3>
-          <p class="text-content">
-            Looking for new experiences and boost my career as developer, I’m a
-            passionate self-taught person who loves to improve my skills,
-            working in some projects to gain experience and also I enjoy
-            programming on Codewars and Freecodecamp. I love to read books and
-            currently I'm reading, analyzing and practicing from Eloquent
-            JavaScript because I want to master my knowledge in JavaScript.
+        </header>
+        <!-- End Contact info -->
+        <div class="my-education">
+          <h3 class="title-left">EDUCATION</h3>
+          <p>Software Developer</p>
+          <p>Technical Degree</p>
+          <p>C.T.P Jesús Ocaña Rojas</p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+            2018 - 2021
           </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>Alajuela, Costa Rica
+          </p>
+        </div>
 
-          <!-- My Experience -->
-          <div class="experience">
-            <h3 class="title-right">WORK EXPERIENCE</h3>
-            <!-- Arcade -->
-            <h4 class="title-job">Software QA Delevoper</h4>
-            <p class="position">Arcade</p>
-            <div class="flex-container">
-              <p class="date1">June 2022 - Present</p>
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16px"
-                  width="16px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                  /></svg
-                >Remote
-              </p>
-            </div>
-            <p>
-              • In charge of testing, debbuging alongside with the developers
-              fixing the bugs, therefore applying requirements logistics of the
-              bussinnes.
-            </p>
-            <p>
-              • Working with Project Manager/Scrum Master with the requirements,
-              documentation and enhacements for process.
-            </p>
-          </div>
-          <!-- UCB -->
-          <div class="experience2">
-            <h4 class="title-job">Call Center Agent</h4>
-            <p class="position">UCB Collections</p>
-            <div class="flex-container">
-              <p class="date2">February - June 2022</p>
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16px"
-                  width="16px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                  /></svg
-                >Work from home
-              </p>
-            </div>
-            <p>• Dealing with medical insurance's data entry.</p>
-            <p>• Customer service representative.</p>
-            <p>
-              • Employed problem solving and communication skills as call center
-              agent for high-end medical firm.
-            </p>
-          </div>
-          <!-- Dental Clinic -->
-          <div class="experience2">
-            <h4 class="title-job">Software Developer</h4>
-            <p class="position">Dental Familiar Clinic</p>
-            <div class="flex-container">
-              <p class="date3">July - December 2022</p>
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16px"
-                  width="16px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                  /></svg
-                >On site
-              </p>
-            </div>
-            <p>
-              • analyzing of the processes of the company and looking for
-              solution to optimize the workflow.
-            </p>
-            <p>
-              • In charge of obtain the necessary requirements to develop the
-              project and make plans in base of the analysis and test the
-              proccess.
-            </p>
-            <p>
-              • Working with a teamwork analyzing the requirements of the
-              project hand in hand with the client.
-            </p>
-          </div>
-          <!-- ID for ideas -->
+        <!-- My Skills -->
+        <div class="my-skills">
+          <h3 class="title-left">My Skills</h3>
+          <ul class="my-skills-lang">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Git</li>
+            <li>Mysql</li>
+          </ul>
+        </div>
 
-          <div class="experience2">
-            <h4 class="title-job">Front end Developer</h4>
-            <p class="position">ID for Ideas</p>
-            <div class="flex-container">
-              <p class="date3">June - December 2022</p>
-              <p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="16px"
-                  width="16px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                  /></svg
-                >Remote
-              </p>
-            </div>
-            <p>
-              • In charge of design and work on the interface of a bank project,
-              according to the given requirements.
-            </p>
-            <p></p>
-          </div>
+        <!-- Certifications -->
+        <h3 class="title-left">Certifications</h3>
+        <div class="languages">
+          <p>Scrum Master</p>
+          <p>Software Design</p>
+          <p>Linux Unhachted</p>
+          <p>Cisco IT Essentials</p>
+          <p>JavaScript Moderno</p>
+          <p>CSS Master Course</p>
+          <p>Software Methodologies</p>
+          <p>Agile Software Development</p>
+          <p>Engineering Practices for Software.</p>
+        </div>
 
-          <!-- End My Experience -->
-        </section>
-        <!-- ***** End Right side ***** -->
-      </div>
-      <!-- End Container2 -->
+        <!-- Languages -->
+        <h3 class="title-left">My Languages</h3>
+        <div class="languages">
+          <p>English (b2+)</p>
+          <p>Spanish Native Speaker</p>
+        </div>
+      </section>
+      <!-- ***** End Left side ***** -->
+
+      <!-- ***** Right side ***** -->
+      <section class="right-side">
+        <h3 class="header-left">SUMMARY</h3>
+        <p class="text-content">
+          Looking for new experiences and boost my career as developer, I’m a
+          passionate self-taught person who loves to improve my skills,
+          working in some projects to gain experience and also I enjoy
+          programming on Codewars and Freecodecamp. I love to read books and
+          currently I'm reading, analyzing and practicing from Eloquent
+          JavaScript because I want to master my knowledge in JavaScript.
+        </p>
+
+        <!-- My Experience -->
+        <div class="experience">
+          <h3 class="title-right">WORK EXPERIENCE</h3>
+          <!-- Arcade -->
+          <h4 class="title-job">Software QA Developer</h4>
+          <p class="position">Arcade</p>
+          <div class="flex-container">
+            <p class="date1">June 2022 - Present</p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>Remote
+            </p>
+          </div>
+          <p>
+            • In charge of testing, debugging alongside with the developers
+            fixing the bugs, therefore applying requirements logistics of the
+            business.
+          </p>
+          <p>
+            • Working with Project Manager/Scrum Master with the requirements,
+            documentation and enhacements for process.
+          </p>
+        </div>
+        <!-- UCB -->
+        <div class="experience2">
+          <h4 class="title-job">Call Center Agent</h4>
+          <p class="position">UCB Collections</p>
+          <div class="flex-container">
+            <p class="date2">February - June 2022</p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>Work from home
+            </p>
+          </div>
+          <p>• Dealing with medical insurance's data entry.</p>
+          <p>• Customer service representative.</p>
+          <p>
+            • Employed problem solving and communication skills as call center
+            agent for high-end medical firm.
+          </p>
+        </div>
+        <!-- Dental Clinic -->
+        <div class="experience2">
+          <h4 class="title-job">Software Developer</h4>
+          <p class="position">Dental Familiar Clinic</p>
+          <div class="flex-container">
+            <p class="date3">July - December 2022</p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>On site
+            </p>
+          </div>
+          <p>
+            • analyzing of the processes of the company and looking for
+            solution to optimize the workflow.
+          </p>
+          <p>
+            • In charge of obtain the necessary requirements to develop the
+            project and make plans in base of the analysis and test the
+            proccess.
+          </p>
+          <p>
+            • Working with a teamwork analyzing the requirements of the
+            project hand in hand with the client.
+          </p>
+        </div>
+        <!-- ID for ideas -->
+
+        <div class="experience2">
+          <h4 class="title-job">Front end Developer</h4>
+          <p class="position">ID for Ideas</p>
+          <div class="flex-container">
+            <p class="date3">June - December 2022</p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" height="16px" width="16px" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>Remote
+            </p>
+          </div>
+          <p>
+            • In charge of design and work on the interface of a bank project,
+            according to the given requirements.
+          </p>
+          <p></p>
+        </div>
+
+        <!-- End My Experience -->
+      </section>
+      <!-- ***** End Right side ***** -->
     </div>
-    <!-- End Container cv -->
+    <!-- End Container2 -->
+  </div>
+  <!-- End Container cv -->
 
-    <section>
-      <!-- ***** Education timeline ***** -->
-      <div id="education" class="container full-lg-screen">
-        <h2 class="section-title" data-dark>My Education</h2>
-        <div class="main-container">
-          <section id="timeline" class="timeline-outer">
-            <div class="container" id="content">
-              <div class="row">
-                <div class="col s12 m12 l12">
-                  <ul class="timeline">
-                    <!-- software developer -->
-                    <li class="event" data-date="2019/2021">
-                      <h3>Software Developer</h3>
-                      <p>
-                        On December 2021 I got my technical certification as a
-                        software developer at CTP Jesus Ocaña Rojas, to broaden
-                        my knowledge and gain the necessary skills for my future
-                        in the Software Development industry.
-                      </p>
-                    </li>
-                    <!-- front end developer -->
-                    <li class="event" data-date="2010/2012">
-                      <h3>Front end Developer</h3>
-                      <p>
-                        Nowadays I'm focusing mastering on JavaScrip learning as
-                        a self-taught person from Udemy, MDN, Freecodecamp,
-                        Codewars and the book Eloquent JS.
-                      </p>
-                    </li>
-                    <!-- scrum master -->
-                    <li class="event" data-date="2010/2012">
-                      <h3>Scrum Master</h3>
-                      <p>
-                        I studied different agile methodologies and currently in
-                        my job we use scrum methodology to appy in our daily
-                        workflow.
-                      </p>
-                    </li>
-                    <li class="event" data-date="2012/2015">
-                      <h3>English as a Professional Language</h3>
-                      <p>
-                        On July 2022 I got my C1 certification as an english
-                        speaker and I still continue learning everyday for
-                        boosting my career and my knowledge.
-                      </p>
-                    </li>
-                    <li class="event" data-date="2019/2021">
-                      <h3>Cisco IT Essentials</h3>
-                      <p>
-                        Technical certificated on IT in Omar Dengo Foundation. I
-                        got the essential and necessary knowledge to maintain
-                        computers both software and hardware.
-                      </p>
-                    </li>
-                    <li class="event" data-date="2019/2021">
-                      <h3>Linux Unhachted</h3>
-                      <p>
-                        Certificate on Linux Unhatched in Omar Dengo Foundation.
-                        I gained the knowledge of how Linux works working on a
-                        remotely enviroment and learning how to use the console.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
+  <section>
+    <!-- ***** Education timeline ***** -->
+    <div id="education" class="container full-lg-screen">
+      <h2 class="section-title" data-dark>My Education</h2>
+      <div class="main-container">
+        <section id="timeline" class="timeline-outer">
+          <div class="container" id="content">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <ul class="timeline">
+                  <!-- software developer -->
+                  <li class="event" data-date="2019/2021">
+                    <h3>Software Developer</h3>
+                    <p>
+                      On December 2021 I got my technical certification as a
+                      software developer at CTP Jesus Ocaña Rojas, to broaden
+                      my knowledge and gain the necessary skills for my future
+                      in the Software Development industry.
+                    </p>
+                  </li>
+                  <!-- front end developer -->
+                  <li class="event" data-date="2010/2012">
+                    <h3>Front end Developer</h3>
+                    <p>
+                      Nowadays I'm focusing mastering on JavaScrip learning as
+                      a self-taught person from Udemy, MDN, Freecodecamp,
+                      Codewars and the book Eloquent JS.
+                    </p>
+                  </li>
+                  <!-- scrum master -->
+                  <li class="event" data-date="2010/2012">
+                    <h3>Scrum Master</h3>
+                    <p>
+                      I studied different agile methodologies and currently in
+                      my job we use scrum methodology to appy in our daily
+                      workflow.
+                    </p>
+                  </li>
+                  <li class="event" data-date="2012/2015">
+                    <h3>English as a Professional Language</h3>
+                    <p>
+                      On July 2022 I got my C1 certification as an english
+                      speaker and I still continue learning everyday for
+                      boosting my career and my knowledge.
+                    </p>
+                  </li>
+                  <li class="event" data-date="2019/2021">
+                    <h3>Cisco IT Essentials</h3>
+                    <p>
+                      Technical certificated on IT in Omar Dengo Foundation. I
+                      got the essential and necessary knowledge to maintain
+                      computers both software and hardware.
+                    </p>
+                  </li>
+                  <li class="event" data-date="2019/2021">
+                    <h3>Linux Unhachted</h3>
+                    <p>
+                      Certificate on Linux Unhatched in Omar Dengo Foundation.
+                      I gained the knowledge of how Linux works working on a
+                      remotely enviroment and learning how to use the console.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
-          </section>
-          <br />
-        </div>
+          </div>
+        </section>
+        <br />
       </div>
-      <!-- ***** Education timeline ***** -->
-    </section>
-    <!-- Section Footer -->
-    <div class="containerfooter">
-      <div class="containerul container">
-        <div class="el-1">
-          <img src="assets/html-5.svg" height="400" width="400" alt="HTML5" />
-        </div>
-        <div class="el-1">
-          <img src="assets/css-3.svg" height="400" width="400" alt="CSS" />
-        </div>
-        <div class="el-1">
-          <img
-            src="assets/javascript.svg"
-            height="400"
-            width="400"
-            alt="JavaScript"
-          />
-        </div>
-      </div>
-      <hr class="line-footer" />
-
-      <small>
-        © Copyright 2022
-        <a href="index.html" target="_blank" rel="noopener">Andrés</a>🦈</small
-      >
     </div>
-    <!-- Section Footer -->
-    <footer class="footer"></footer>
-    <button class="dark-theme-btn">🌙</button>
-    <button class="scroll-top-btn hidden">🔱</button>
-    <script src="js/script.js" defer></script>
-    <script src="js/pdf.js" defer></script>
-    <!-- <script src="html2pdf.bundle.min.js"></script>  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      defer
-    ></script>
-  </body>
+    <!-- ***** Education timeline ***** -->
+  </section>
+  <!-- Section Footer -->
+  <div class="containerfooter">
+    <div class="containerul container">
+      <div class="el-1">
+        <img src="assets/html-5.svg" height="400" width="400" alt="HTML5" />
+      </div>
+      <div class="el-1">
+        <img src="assets/css-3.svg" height="400" width="400" alt="CSS" />
+      </div>
+      <div class="el-1">
+        <img src="assets/javascript.svg" height="400" width="400" alt="JavaScript" />
+      </div>
+    </div>
+    <hr class="line-footer" />
+
+    <small>
+      © Copyright 2022
+      <a href="index.html" target="_blank" rel="noopener">Andrés</a>🦈</small>
+  </div>
+  <!-- Section Footer -->
+  <footer class="footer"></footer>
+  <button class="dark-theme-btn">🌙</button>
+  <button class="scroll-top-btn hidden">🔱</button>
+  <script src="js/script.js" defer></script>
+  <script src="js/pdf.js" defer></script>
+  <!-- <script src="html2pdf.bundle.min.js"></script>  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+</body>
+
 </html>
