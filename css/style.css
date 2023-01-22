@@ -403,8 +403,7 @@ p {
   outline: thin solid var(--dark-color);
   border: 0;
   cursor: pointer;
-  /*  background: linear-gradient(to right, #3271dd, #005bea); */
-  /*   background: linear-gradient(to right, #0d337500, #27509600); */
+  background: linear-gradient(to top, #2654a4fc, #375d9efd);
 }
 
 .menu-btn svg {
@@ -1035,7 +1034,7 @@ y dice software developer
 /* ******** ScrollTopButton ******** */
 .scroll-top-btn {
   position: fixed;
-  bottom: 10vh;
+  bottom: 11vh;
   right: 1vw;
   width: 3.5rem;
   height: 3.5rem;
@@ -1064,7 +1063,7 @@ y dice software developer
 /* ******** DarkThemeButton ******** */
 .dark-theme-btn {
   position: fixed;
-  bottom: 10vh;
+  bottom: 11vh;
   left: 1vw;
   width: 3.5rem;
   height: 3.5rem;
@@ -1115,14 +1114,14 @@ y dice software developer
 @media screen and (max-width: 600px) {
   .download-cv-btn {
     position: fixed;
-    bottom: 10vh;
+    bottom: 11vh;
     left: 20vw;
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
     font-size: 2rem;
     font-weight: bold;
-    background-color: var(--first-color);
+    background-color: var(--second-alpha-color);
     color: var(--second-color);
     cursor: pointer;
     outline: 0;
