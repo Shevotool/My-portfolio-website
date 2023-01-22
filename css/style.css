@@ -54,27 +54,6 @@ a:hover {
   opacity: 0.75;
 }
 
-/* Styling hyperlinks */
-/* LVHA */
-.elocuent:link {
-  color: #0000ff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.elocuent:visited {
-  color: #0000ff;
-}
-
-.elocuent:hover {
-  color: red;
-  text-decoration: underline red;
-}
-
-.elocuent:active {
-  background-color: black;
-  font-style: italic;
-}
 
 /* Styling hyperlinks */
 /* LVHA */
