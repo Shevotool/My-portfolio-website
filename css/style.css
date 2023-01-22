@@ -3,14 +3,15 @@
 /* ******** Custom Properties ******** */
 :root {
   --dark-color: #222;
-  --first-color: #db2777; /* Letras y botones */
-  --first-alpha-color: #e43270d6; /* color fondo fotos portfolio */
-  --second-color: #1e3a8a; /* Footer */
-  --second-alpha-color: #0c4a6e;
-  --third-color: #501464;
-  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  /* Letras y botones */
+  --second-alpha-color: #324e7e;
+  /* color fondo fotos portfolio */
+  --first-alpha-color: #413f3ee0;
+  /* Footer */
+  --second-color: #324e7e;
   --white-color: #fff;
-  --gray-light-color: #f8fafc; /* Blanco de cabecera */
+  --gray-light-color: #e6e6e6;
+  /* Blanco de cabecera */
   --gray-color: rgb(224, 221, 221);
   --dark-gray-color: rgb(188, 182, 182);
   --black-color: #000;
@@ -53,7 +54,8 @@ a:hover {
   opacity: 0.75;
 }
 
-/* Styling hyperlinks */ /* LVHA */
+/* Styling hyperlinks */
+/* LVHA */
 .elocuent:link {
   color: #0000ff;
   font-weight: bold;
@@ -74,7 +76,8 @@ a:hover {
   font-style: italic;
 }
 
-/* Styling hyperlinks */ /* LVHA */
+/* Styling hyperlinks */
+/* LVHA */
 h1 {
   margin: 0;
   font-size: 2rem;
@@ -113,23 +116,20 @@ img {
 p {
   line-height: 1.6;
 }
+
 /* ******** Components ******** */
 
 /*  BurbujasTheme */
 
 .bg_animate {
-  /*  z-index: 999; */
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, #4481eb, #005bea);
+  background: linear-gradient(to bottom, #275096, #3d62a1);
   position: relative;
   overflow: hidden;
 }
 
-.header_nav h1 {
-  color: #fff;
-  font-family: "Gagalin";
-}
+
 
 .banner {
   display: flex;
@@ -140,15 +140,18 @@ p {
 
 .banner_title h1 {
   color: var(--gray-light-color);
-  font-size: 6vw; /* Letras titulo */
+  font-size: 6vw;
+  /* Letras titulo */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+
 @media screen and (max-width: 600px) {
   .banner_title h1 {
     margin-left: 2rem;
-    font-size: 1.9rem; /* Letras titulo */
+    font-size: 1.9rem;
+    /* Letras titulo */
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -182,8 +185,8 @@ p {
 
 .burbuja {
   border-radius: 50%;
-  background: #fff;
-  opacity: 0.3;
+  background: #ffffffca;
+  opacity: 0.4;
   position: absolute;
   /*  bottom: 150px; */
   animation: burbujas 3s linear infinite;
@@ -274,12 +277,15 @@ p {
     bottom: 0;
     opacity: 0;
   }
+
   30% {
     transform: translateX(30px);
   }
+
   50% {
     opacity: 0.4;
   }
+
   100% {
     bottom: 100vh;
     opacity: 0;
@@ -290,9 +296,11 @@ p {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(30px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -300,29 +308,6 @@ p {
 
 /* BurbujasTheme */
 
-/*   Welcome  */
-
-.animate-charcter {
-  background-image: linear-gradient(
-    -225deg,
-    #ffe29f 0%,
-    #ffa99f 48%,
-    #ff719a 100%
-  );
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 
 /* ******** Contact Form ******** */
 
@@ -333,7 +318,7 @@ p {
   max-width: 800px;
 }
 
-.contact-form > * {
+.contact-form>* {
   padding: 0.5rem;
   margin: 1rem auto;
   display: block;
@@ -418,7 +403,8 @@ p {
   outline: thin solid var(--dark-color);
   border: 0;
   cursor: pointer;
-  background: linear-gradient(to right, #3271dd, #005bea);
+  /*  background: linear-gradient(to right, #3271dd, #005bea); */
+  /*   background: linear-gradient(to right, #0d337500, #27509600); */
 }
 
 .menu-btn svg {
@@ -432,7 +418,8 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #3173e6, #005bea);
+  /*   background: linear-gradient(to right, #3173e6, #005bea); */
+  background: linear-gradient(to top, #2654a4fc, #375d9efd);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s ease;
@@ -486,7 +473,8 @@ p {
 /* ******** Modal ******** */
 .modal {
   position: fixed;
-  z-index: 999; /* Revisar creo que lo arregle revisar si no afecta otros comp */
+  z-index: 999;
+  /* Revisar creo que lo arregle revisar si no afecta otros comp */
   top: 0;
   right: 0;
   bottom: 0;
@@ -534,7 +522,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-image: linear-gradient(to right, #588eec, #1d6ceb);
+  background: linear-gradient(to right, #275096, #3d62a1);
 }
 
 progress::-moz-progress-bar {
@@ -545,7 +533,7 @@ progress::-moz-progress-bar {
   margin: 1rem auto;
 }
 
-.progress > p {
+.progress>p {
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -571,17 +559,47 @@ progress::-moz-progress-bar {
   color: #fff;
 }
 
-.btn2 {
+.btn2,
+.btn:link,
+.btn:visited {
   border-radius: 0.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 1.2rem 2.4rem;
   display: inline-block;
-  width: 9rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: var(--white-color);
-  background-color: var(--first-color);
+
+
+
+  /* Only for neccessary btn */
+  border: none;
+  cursor: pointer;
+
+
+  /* Put transition on original "state" */
+  /*  transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
+
+
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #FFFFFF;
+  color: #4D4D4D;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: transparent;
+  color: #FFFFFF;
+
+  /* Trick to add a border inside */
+  box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+
 
 .btn {
   border-radius: 0.5rem;
@@ -592,7 +610,12 @@ progress::-moz-progress-bar {
   text-align: center;
   text-decoration: none;
   color: var(--white-color);
-  background-color: var(--first-color);
+  background-color: #8d6103;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #a26e03;
 }
 
 .container {
@@ -678,7 +701,7 @@ progress::-moz-progress-bar {
 
 /* ******** Site Styles ******** */
 
-.about > article {
+.about>article {
   margin-bottom: 2rem;
 }
 
@@ -695,13 +718,17 @@ progress::-moz-progress-bar {
   align-items: center;
 }
 
-.contact-card > svg {
+.contact-card h2 {
+  font-size: 0.85rem;
+}
+
+.contact-card>svg {
   width: 2rem;
   height: 2rem;
   fill: #054179;
 }
 
-.contact-card > small {
+.contact-card>small {
   margin-top: -1rem;
 }
 
@@ -730,11 +757,9 @@ progress::-moz-progress-bar {
   font-size: 23px;
   color: var(--white-color);
   background-color: var(--second-color);
-  background-image: -webkit-linear-gradient(
-    150deg,
-    #005bea 35%,
-    rgba(20, 25, 45, 0.75) 35%
-  );
+  background-image: -webkit-linear-gradient(150deg,
+      #3f619d 35%,
+      rgba(20, 25, 45, 0.75) 35%);
 }
 
 .containerul {
@@ -772,6 +797,7 @@ hr {
     flex: 0 0 40px;
   }
 }
+
 /* Footer */
 
 /* Header */
@@ -784,10 +810,11 @@ hr {
   padding: 1rem;
   width: 100%;
   height: var(--header-height);
-  background: linear-gradient(to right, #4481eb, #005bea);
+  /*   background: linear-gradient(to right, #4481eb, #005bea); */
+  background: linear-gradient(to top, #275096, #3d62a1);
 }
 
-.header > .container {
+.header>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -820,10 +847,10 @@ hr {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: var(
-    --first-alpha-color
-  ); /* color del card del my proyects */
-  color: var(--white-color); /* color letras contenido del card  proyects*/
+  background-color: var(--first-alpha-color);
+  /* color del card del my proyects */
+  color: var(--white-color);
+  /* color letras contenido del card  proyects*/
   font-size: 18px;
   opacity: 0;
   pointer-events: none;
@@ -835,7 +862,7 @@ hr {
   pointer-events: auto;
 }
 
-.portfolio-card-info > div {
+.portfolio-card-info>div {
   padding: 1rem;
   border: thin solid var(--white-color);
   width: 100%;
@@ -866,6 +893,7 @@ hr {
 .portfolio-details b {
   color: var(--first-color);
 }
+
 .service-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -898,7 +926,7 @@ hr {
     justify-content: space-between;
   }
 
-  .portfolio > .container {
+  .portfolio>.container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
@@ -917,7 +945,7 @@ hr {
     align-self: center;
   }
 
-  .services > .container {
+  .services>.container {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     justify-content: space-between;
@@ -952,7 +980,7 @@ hr {
     height: calc(var(--header-height) - 0.5rem);
   }
 
-  .portfolio > .container {
+  .portfolio>.container {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -960,7 +988,7 @@ hr {
     grid-column: span 3;
   }
 
-  .services > .container {
+  .services>.container {
     grid-template-columns: repeat(3, 30%);
   }
 
@@ -1001,6 +1029,7 @@ y dice software developer
     border-color: transparent;
   }
 }
+
 /* ******** Service CSS ******** */
 
 /* ******** ScrollTopButton ******** */
@@ -1013,7 +1042,7 @@ y dice software developer
   border-radius: 50%;
   font-size: 2rem;
   font-weight: bold;
-  background-color: var(--first-color);
+  background-color: var(--second-alpha-color);
   color: var(--second-color);
   cursor: pointer;
   outline: 0;
@@ -1022,8 +1051,7 @@ y dice software developer
 }
 
 .scroll-top-btn:hover {
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: #6581b1;
 }
 
 .hidden {
@@ -1043,7 +1071,7 @@ y dice software developer
   border-radius: 50%;
   font-size: 2rem;
   font-weight: bold;
-  background-color: var(--first-color);
+  background-color: var(--second-alpha-color);
   color: var(--second-color);
   cursor: pointer;
   outline: 0;
@@ -1052,8 +1080,7 @@ y dice software developer
 }
 
 .dark-theme-btn:hover {
-  background-color: var(--dark-color);
-  color: var(--white-color);
+  background-color: #6581b1;
 }
 
 .dark-mode {
@@ -1073,12 +1100,16 @@ y dice software developer
   border-radius: 50%;
   font-size: 2rem;
   font-weight: bold;
-  background-color: var(--first-color);
+  background-color: var(--second-alpha-color);
   color: var(--second-color);
   cursor: pointer;
   outline: 0;
   border: 0;
   transition: all 0.3s ease-out;
+}
+
+.download-cv-btn:hover {
+  background-color: #6581b1;
 }
 
 @media screen and (max-width: 600px) {
@@ -1110,10 +1141,7 @@ y dice software developer
   margin-right: auto;
 }
 
-.download-cv-btn:hover {
-  background-color: var(--dark-color);
-  color: var(--white-color);
-}
+
 
 .dark-mode {
   background-color: var(--dark-color);
