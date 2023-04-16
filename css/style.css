@@ -589,6 +589,7 @@ progress::-moz-progress-bar {
   text-decoration: none;
   color: var(--white-color);
   background-color: #8d6103;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
   transition: all 0.3s;
 }
 
@@ -630,6 +631,10 @@ progress::-moz-progress-bar {
 
 .none {
   display: none;
+}
+
+.education-section {
+  margin-top: 8rem;
 }
 
 .section {
@@ -1025,6 +1030,8 @@ y dice software developer
   cursor: pointer;
   outline: 0;
   border: 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.45);
+  cursor: pointer;
   transition: all 0.3s ease-out;
 }
 
@@ -1054,6 +1061,7 @@ y dice software developer
   cursor: pointer;
   outline: 0;
   border: 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-out;
 }
 
@@ -1083,6 +1091,7 @@ y dice software developer
   cursor: pointer;
   outline: 0;
   border: 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-out;
 }
 
@@ -1147,6 +1156,7 @@ y dice software developer
   text-align: center;
   text-decoration: none;
   color: var(--white-color);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 
@@ -1244,8 +1254,8 @@ y dice software developer
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
