@@ -10,6 +10,7 @@
   /* Footer */
   --second-color: #324e7e;
   --white-color: #fff;
+  --pink-color: #faf4ee;
   --gray-light-color: #e6e6e6;
   /* Blanco de cabecera */
   --gray-color: rgb(224, 221, 221);
@@ -42,6 +43,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: #faf4ee;
   color: var(--text-color);
 }
 
@@ -488,41 +490,101 @@ p {
 }
 
 /* ******** ProgressBar ******** */
+.tech__stack {
+  margin-left: 2rem;
+  position: relative;
+  margin-top: 3rem;
+  border-radius: 6px;
 
-progress {
-  width: 100%;
-  height: 1rem;
-  background-color: var(--gray-color);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-progress::-webkit-progress-bar {
-  background-color: var(--gray-color);
+.tech__stack-ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
-progress::-webkit-progress-value {
-  background: linear-gradient(to right, #275096, #3d62a1);
+.tech__stack-ul svg {
+  max-height: 3.5rem;
+  width: auto;
+  transition: all 0.3s;
 }
 
-progress::-moz-progress-bar {
-  background-color: var(--dark-gray-color);
+.tech__stack-ul svg:hover {
+  cursor: pointer;
+  transform: translate(-0%, -8%);
 }
 
-.progress {
-  margin: 1rem auto;
+.section-background {
+  background-color: #faf4ee;
 }
 
-.progress>p {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1175px) {
+  .tech__stack-ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+
+  .tech__stack-ul svg {
+    max-height: 2.5rem;
+    width: auto;
+    transition: all 0.3s;
+  }
 }
+
+@media screen and (min-width: 466px) and (max-width: 1024px) {
+  .tech__stack-ul {
+    width: 80%;
+    grid-template-columns: .5fr .5fr .5fr;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .tech__stack-ul svg {
+    max-height: 3rem;
+    width: auto;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .tech__stack-ul {
+    width: 80%;
+    grid-template-columns: .5fr .5fr .5fr;
+    gap: 1rem;
+  }
+
+  .tech__stack-ul svg {
+    max-height: 3rem;
+    width: auto;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (max-width: 5750px) {
+  .tech__stack-ul {
+    width: 80%;
+    grid-template-columns: .5fr .5fr .5fr;
+    gap: 1rem;
+
+  }
+
+}
+
 
 /* ******** Utilities ******** */
 
+
 .bg-gray-light {
   /*  background-color: var(--gray-light-color); */
-  background-color: #f1f5f9;
+  background: linear-gradient(to top, #2654a4fc, #375d9efd);
 }
 
 .box-shadow-1 {
@@ -648,7 +710,7 @@ progress::-moz-progress-bar {
   padding: 0.5rem 1rem;
   width: 240px;
   text-align: center;
-  color: var(--title-color);
+  color: var(--pink-color);
 }
 
 .text-center {
@@ -881,14 +943,15 @@ hr {
   margin: 1rem auto;
   padding: 1rem;
   text-align: center;
+  color: var(--pink-color);
 }
 
 .service-card h3 {
-  color: var(--title-color);
+  color: var(--pink-color);
 }
 
 .service-card svg {
-  fill: var(--dark-color);
+  fill: var(--pink-color);
   margin-bottom: 1.25rem;
 }
 
